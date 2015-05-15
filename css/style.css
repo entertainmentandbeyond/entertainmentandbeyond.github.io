@@ -1,0 +1,179 @@
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url('images/background.png');
+ 	background-repeat: repeat;
+    	margin: 10px;
+	height: auto;
+}
+a {text-decoration: none;}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.infobox{
+    background: #A4A4A4;
+    border: 1px solid #444855;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+   padding:5px 25px 5px 25px;
+}
+#header{
+	float: center;
+	margin: 0 auto;
+}
+.footer {
+	text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.toggleMenu {
+    display:  none;
+    background: #666;
+    padding: 10px 15px;
+    color: #fff;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+     background:#D02592;
+}
+.nav:before,
+.nav:after {
+    content: " ";
+    display: table;
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
+    padding: 10px 15px;
+    color:#fff;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+    border-top: 1px solid #104336;
+}
+.nav > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+
+.nav li:hover{
+background-color:#D02592;
+
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a:hover{
+background-color:#D02592;
+
+}
+.nav li li a {
+    display: block;
+    background: #8585AD;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #175e4c;
+}
+.nav li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+
+@media screen and (max-width: 768px) {
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+.availability{
+width:150px;
+height:30px;
+vertical-align:center;
+text-align:center;
+font:14px Tahoma, Verdana;
+}
+
+.btnAvailability{
+width:200px;
+height:40px;
+font-weight:bold;
+}
+
+.slider{
+width:40%;
+margin: 0 auto;
+}
+
+table, th, td{
+border: 3px solid #000000;
+vertical-align:middle;
+text-align: center;
+}
+
+input[type="text"]{
+margin: 0 auto;
+}
+
+.ui-checkbox-on .ui-icon, .ui-radio-on .ui-icon{
+background-color:#000000 !important;
+}
+
+.ui-btn.ui-submit{
+margin: 8px !important;
+}
+
+textarea.ui-input-text {
+    height : 150px !important;
+}​
+
+.ui-listview-filter-inset {
+	margin:40px !important;
+}
+

@@ -1,0 +1,8 @@
+in enb computer
+
+mysqldump --user=beyond --password=beyond --host=localhost beyond > /home/stephen/Jan172014.sql
+
+in backup computer
+cd ./backupfolder
+scp stephen@admin.entertainmentandbeyond.com:/home/stephen/Jan172014.sql .
+

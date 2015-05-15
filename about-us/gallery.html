@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<META NAME="keywords" CONTENT="Entertainment and Beyond karaoke photobooth warrington philadelphia ">
+	<META NAME="description" CONTENT="Entertainment and Beyond">
+	<META NAME="robots" CONTENT="all">
+	<META NAME="revisit-after" CONTENT="14 days">
+	<TITLE>Entertainment and Beyond</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<meta charset="utf-8">
+	
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/slides.css">
+
+
+
+	<!-- Scripts
+	================================================== -->
+	<script src="../scripts/jquery-1.9.1.min.js"></script>
+	<script src="../scripts/jquery.slides.js"></script>
+
+
+
+</head>
+<body>	
+	<div id="menu" class="container">
+			<div id="header">
+			<center><a href="../index.html"><img id="logo" width="100%" src="../images/eandbbannerclear.png"></a><br></center>
+			</div>
+			<a class="toggleMenu" href="#">Menu</a>			
+			<ul class="nav">
+				<li class="test"><a href="../index.html">Home</a></li>
+				<li><a href="#">DJ Celebrations</a>
+					<ul>
+						<li><a href= "../dj/weddings.html"> Weddings</a></li>
+						<li><a href="../dj/corporate.html">Corporate Events</a></li>
+						<li><a href="../dj/barbatmitzvah.html">Bar/Bat Mitzvahs</a></li>
+						<li><a href="../dj/parties.html">Parties</a></li>
+						<li><a href="../dj/sweetsixteens.html">Sweet Sixteens</a></li>
+						<li><a href="../dj/karaokedj.html">Karaoke DJs</a></li>
+					</ul>					
+				</li>
+				<li><a href="#">Photobooths</a>
+					<ul>
+						<li><a href="../photobooth/open.html">Open Photobooth</a></li>
+						<li><a href="../photobooth/closed.html">Closed Photobooth</a></li>
+					</ul>
+				</li>
+                <li><a href="#">Photography</a>
+					<ul>
+						<li><a href="../photography/photographer.html">Professional Photos</a></li>
+    					<li><a href="../photography/wedding-photographer.html">Wedding Photos</a></li>
+					</ul>
+				</li>
+				<li><a href="../murdermystery.html">Murder Mystery</a></li>
+				<li><a href="#">Rentals</a>
+					<ul>
+						<li><a href="../rentals/dj.html">DJ</a></li>
+						<li><a href="../rentals/karaoke.html">Karaoke</a></li>
+						<li><a href="../rentals/moviescreen.html">Movie Screens</a></li>
+						<li><a href="../rentals/other.html">Other</a></li>
+					</ul>	
+				</li>
+				<li><a href="#">About Us</a>
+					<ul>
+						<li><a href="../about-us/about-us.html">About Us</a></li>
+						<li><a href="../about-us/our-music-library.html">Our Music Library</a></li>
+						<li><a href="../about-us/gallery.html">Gallery</a></li>
+						<li><a href="http://gigbuilder.com/cal/pa/karaokeandbeyond.nsf/login.html">Client Log-in</a></li>
+					</ul>
+				</li>
+				<li><a href="../book.html">Book!</a></li>
+			</ul>
+	</div>			
+<script>
+	var slideHtml="";
+	$.getJSON("http://graph.facebook.com/531811220218569?fields=photos",function(data){
+		$.each(data.photos.data, function (key, val) {					
+			 slideHtml=slideHtml+"<img width=100% height=100% src="+val.source+">";
+		})
+		
+		$("#slides").html(slideHtml);
+		  $("#slides").slidesjs({
+			height:100,
+			width:135,
+			navigation: {			
+			active: false,
+			},
+			pagination: {
+			active: false,
+			},
+	
+			play: {
+			  active: false,
+			  auto: true,
+			  interval: 2500,
+			}
+		})	
+	})
+</script>
+			
+<div class="container">
+
+
+<h1>Gallery</h1>
+<div class="slider" id="slider">
+<div id="slides"></div>
+
+
+	
+</div>
+
+
+<script>$(function(){ $("#availability").load('../includes/availability.html');})</script>
+<div id="availability"></div>
+<div class="footer">
+<br><br><br>
+View our <strong><a target="_blank" href="../docs/EBpolicy.pdf">policy</a></strong> detailing payment, procedures & travel.
+<a href="tel:267-702-5266">267-702-JAMM(5266)</a>
+<a href="mailto:info@EntertainmentandBeyond.com">info@EntertainmentandBeyond.com</a>
+</div>
+<script type="text/javascript" src="../scripts/script.js"></script>
+</body>
+</html>
+

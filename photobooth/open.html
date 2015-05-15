@@ -1,0 +1,183 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<META NAME="keywords" CONTENT="Entertainment and Beyond karaoke photobooth warrington philadelphia ">
+	<META NAME="description" CONTENT="Entertainment and Beyond">
+	<META NAME="robots" CONTENT="all">
+	<META NAME="revisit-after" CONTENT="14 days">
+	<TITLE>Entertainment and Beyond</TITLE>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<meta charset="utf-8">
+	
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/slides.css">
+
+
+
+	<!-- Scripts
+	================================================== -->
+	<script src="../scripts/jquery-1.9.1.min.js"></script>
+	<script src="../scripts/jquery.slides.js"></script>
+
+	<script>
+		var slideHtml="";
+		$.getJSON("http://graph.facebook.com/530619423671082?fields=photos",function(data){
+			$.each(data.photos.data, function (key, val) {					
+				 slideHtml=slideHtml+"<img width=100% height=100% src="+val.source+">";
+			})
+			
+			$("#slides").html(slideHtml);
+			  $("#slides").slidesjs({
+				height:100,
+				width:100,
+				navigation: {			
+				active: false,
+				},
+				pagination: {
+				active: false,
+				},
+		
+				play: {
+				  active: false,
+				  auto: true,
+				  interval: 2500,
+				}
+			})	
+		})
+	</script>
+
+</head>
+<body>	
+	<div id="menu" class="container">
+			<div id="header">
+			<center><a href="../index.html"><img id="logo" width="100%" src="../images/eandbbannerclear.png"></a><br></center>
+			</div>
+			<a class="toggleMenu" href="#">Menu</a>			
+			<ul class="nav">
+				<li class="test"><a href="../index.html">Home</a></li>
+				<li><a href="#">DJ Celebrations</a>
+					<ul>
+						<li><a href= "../dj/weddings.html"> Weddings</a></li>
+						<li><a href="../dj/corporate.html">Corporate Events</a></li>
+						<li><a href="../dj/barbatmitzvah.html">Bar/Bat Mitzvahs</a></li>
+						<li><a href="../dj/parties.html">Parties</a></li>
+						<li><a href="../dj/sweetsixteens.html">Sweet Sixteens</a></li>
+						<li><a href="../dj/karaokedj.html">Karaoke DJs</a></li>
+					</ul>					
+				</li>
+				<li><a href="#">Photobooths</a>
+					<ul>
+						<li><a href="../photobooth/open.html">Open Photobooth</a></li>
+						<li><a href="../photobooth/closed.html">Closed Photobooth</a></li>
+					</ul>
+				</li>
+                <li><a href="#">Photography</a>
+					<ul>
+						<li><a href="../photography/photographer.html">Professional Photos</a></li>
+    					<li><a href="../photography/wedding-photographer.html">Wedding Photos</a></li>
+					</ul>
+				</li>
+				<li><a href="../murdermystery.html">Murder Mystery</a></li>
+				<li><a href="#">Rentals</a>
+					<ul>
+						<li><a href="../rentals/dj.html">DJ</a></li>
+						<li><a href="../rentals/karaoke.html">Karaoke</a></li>
+						<li><a href="../rentals/moviescreen.html">Movie Screens</a></li>
+						<li><a href="../rentals/other.html">Other</a></li>
+					</ul>	
+				</li>
+				<li><a href="#">About Us</a>
+					<ul>
+						<li><a href="../about-us/about-us.html">About Us</a></li>
+						<li><a href="../about-us/our-music-library.html">Our Music Library</a></li>
+						<li><a href="../about-us/gallery.html">Gallery</a></li>
+						<li><a href="http://gigbuilder.com/cal/pa/karaokeandbeyond.nsf/login.html">Client Log-in</a></li>
+					</ul>
+				</li>
+				<li><a href="../book.html">Book!</a></li>
+			</ul>
+	</div>			
+
+		
+<div class="container">
+<div class="slider" id="slider">
+<div id="slides"></div>
+</div>
+<br>
+<div class="infobox">
+<h1>Open Photobooths</h1>
+<p align="left">Have a<em> Photo Booth</em> at your next event and watch the smiles emerge as your guests enjoy the experience of having their picture taken during your celebration. A Photo Booth creates a life long memory and a lasting memento of the occasion. We have 2 types of Photo Booths (Closed and Open) each with 3 party packages available.</p>
+<p align="left"> An <em>Open Style Booth</em> has no separating medium that would otherwise give the guests being photographed a level of privacy as the photo session can be seen by others.</p>
+<p align="left">Want to see pictures of recent events - <a title="EntertainmentandBeyond" href="http://www.facebook.com/entertainmentNbeyond" target="_blank">friend us on facebook</a>.</p>
+
+<p align="left"><strong>OPEN BOOTH BEYOND PARTY (2" X 6"):</strong><br>
+	Package Includes:
+	<br>&#149; Setup/breakdown and operation
+	<br>&#149; Onsite technician provided
+	<br>&#149; Prop Box (boas, Leis, goofy glasses, hats.....)
+	<br>&#149; 3 hour use
+	<br>&#149; Pictures taken during your event can be made available on <a href="http://www.facebook.com/EntertainmentNBeyond" target="_blank">Facebook</a> or Google+
+</p>
+<p align="left"><em><strong>COST: <s>$499.99</s> $349.99</strong></em><br><a href="#top">Back to top</a></p>
+
+<p align="left"><strong>OPEN BOOTH NHANCED PARTY (2" x 6"): </strong><br>
+	Package includes all items listed under the <em>Beyond Party </em>plus:
+	<br>&#149; 3 poses per seating
+	<br>&#149; 2 copies of photo per seating
+	<br>&#149; Custom title of your event on each copy
+</p>
+<p><em><strong>COST: <s>$599.99</s> $399.99</strong></em><br><a href="#top">Back to top</a></p>
+
+
+<p align="left"><strong>OPEN BOOTH XTREME PARTY (2" x 6"): </strong><br>
+	Package includes all items listed under the <em>Beyond Party </em>plus:
+	<br>3 poses per seating
+	<br>Multiple Copies (up to 8 copies per seating)
+	<br>Custom title of your event on each copy
+</p>
+<p><em><strong>COST: <s>$699.99</s> $499.99 </strong></em><br><a href="#top">Back to top</a></p>
+<p align="center">Prices subject to change on Holidays.</p>
+<p align="left"><em><strong>Varous add ons to the packages below are available and include:</strong></em></p>
+<br><strong>OPTIONAL DVD</strong> - for a low fee, all the pictures taken during the event can be transferred onto a disc.
+
+<br><strong>FACE IN PHOTO</strong> - allows guests to have their faces placed into a variety of pre-selected background templates that can include Famous Album Covers, Locations and People. We can prepare customized templates (3 maximum) or choose from our current inventory (5 maximum).
+
+<br><strong>DVD MONTAGE VIDEO</strong> - a video montage set to music (of your choice if perferred) that consists of the photographs taken of your guests while using the Photo Booth. Delivery is 7-10 days after the event date. Produced on a DVD that can be played on any DVD player.
+
+<br><strong>PHOTO LOUNGE</strong> - a larger version of our photo booth measuring 10' by 10' that would accommodate more guests (15 individuals or more comfortably) at a given time.
+
+<br><strong>EXTENDED TIME</strong> - you can add hours to the length of time the Photo Booth is in use at your event.
+
+<br><strong>PHOTO ALBUM </strong> - book containing the duplicates of all the photo strips taken personalized by your guests with special messages.
+
+<br><strong>PICTURE FRAMES</strong> - 2x6 magnetic or free standing picture frames. Great for a party favor. 
+
+<br><strong>4 X 6 PHOTO PRINTS</strong> - Increase the size from a 2x6 strip to a 4x6 print with 4 pictures.
+
+<br><strong>LIVE PROJECTION OF PHOTOS ON BIG SCREEN</strong> -  Photos taken in the booth are immediately projected on a large screen for viewing.  
+<br>(<em>Please inquire for more details and the costs associated with these add ons</em>)
+</div>
+</div>
+</div>
+
+
+
+<script>$(function(){ $("#availability").load('../includes/availability.html');})</script>
+<div id="availability"></div>
+<div class="footer">
+<br><br><br>
+View our <strong><a target="_blank" href="docs/EBpolicy.pdf">policy</a></strong> detailing payment, procedures & travel.
+<a href="tel:267-702-5266">267-702-JAMM(5266)</a>
+<a href="mailto:info@EntertainmentandBeyond.com">info@EntertainmentandBeyond.com</a>
+</div>
+<script type="text/javascript" src="../scripts/script.js"></script>
+</body>
+</html>
